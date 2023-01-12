@@ -1,0 +1,5 @@
+.env
+.nuxt/
+.nova/
+.output/
+node_modules/

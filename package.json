@@ -1,0 +1,16 @@
+{
+  "name": "nuxt-dnd-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "glob": "7.2.0",
+    "nuxt": "^3.0.0"
+  }
+}
