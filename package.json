@@ -10,7 +10,10 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
     "glob": "7.2.0",
-    "nuxt": "^3.0.0"
+    "nuxt": "^3.0.0",
+    "pinia": "^2.0.28",
+    "typescript": "^4.9.4"
   }
 }
