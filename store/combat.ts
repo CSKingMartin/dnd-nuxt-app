@@ -6,6 +6,7 @@ export const useCombatStore = defineStore({
   id: "combat-store",
   state: () => {
     return {
+      classList: [],
       playersList: [],
     };
   },
