@@ -1,6 +1,6 @@
 <template>
   <div>Count: {{ classes.count }}</div>
-  <div id="players-list">
+  <div class="font-bold" id="players-list">
     <div v-for="player in list">
       <p>{{ player.name }}</p>
       <p>{{ player.charClass }}</p>
