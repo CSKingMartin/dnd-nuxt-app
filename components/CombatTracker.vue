@@ -1,7 +1,11 @@
 <template>
   <div>Count: {{ classes.count }}</div>
   <div id="players-list">
-    {{ list }}
+    <div v-for="player in list">
+      <p>{{ player.name }}</p>
+      <p>{{ player.charClass }}</p>
+      <p>HP: {{ player.hp }} / {{ player.hp }}</p>
+    </div>
   </div>
   <form id="add-player-form">
     <input placeholder="Character Name" v-model="name" />
@@ -16,6 +20,7 @@
     <button @click="compilePlayerObject" type="button">Add Character</button>
   </form>
 </template>
+
 <script lang="ts" setup>
 import { useCombatStore } from "@/store/combat";
 
@@ -36,7 +41,7 @@ function compilePlayerObject() {
   if (name.value && charClass.value && hp.value) {
     addPlayer({
       name: name.value,
-      class: charClass.value,
+      charClass: charClass.value,
       hp: hp.value,
     });
     // clear input fields
